@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="GGC"
+  id="myeclipse.1284532115015"
+  context-root="/GGC"
+  j2ee-spec="5.0"
+  archive="GGC.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

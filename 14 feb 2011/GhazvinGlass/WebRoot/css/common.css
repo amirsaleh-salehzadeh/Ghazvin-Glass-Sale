@@ -1,0 +1,124 @@
+@CHARSET "ISO-8859-1";
+.userGuide{
+	font-weight: bold;
+	font-size: 15px;
+	color: red;
+	float: right;
+	vertical-align: middle;
+}
+.printTable{
+	color: black;
+}
+.printTable th{
+	size: 40px;
+	font-weight: bold;
+	font-size: 18px;
+	background: #ddd;
+
+}
+table.formTable{
+	border-width: 0px;
+	border-collapse: separate;
+	border-spacing: 5px;
+	border-color: black;
+	padding: 5px;
+}
+.formTable th{
+	background-color: #2a7098;
+	height: 25px;
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+	-moz-border-radius: 0px 8px 8px 0px;
+}
+.formTable th.formHeader {
+	background-color: #2a7098;
+	height: 45px;
+	color: white;
+	font-weight: bold;
+	font-size: 22px;
+	-moz-border-radius: 8px 8px 0px 0px;
+}
+.formTable td{
+	background-color: #e6f1ee;
+	height: 30px;
+	color: black;
+	font-size: 17px;
+	border-width: 2px;
+	padding: 1px;
+	border-style: solid;
+	border-color: #71a0ba;
+	border-left: none;
+	border-top: none;
+	border-right-color: #b7d6e7;
+	-moz-border-radius: 0px 0px 4px 0px;
+}
+table.dataList{
+	border-width: 0px;
+	border-collapse: separate;
+	border-spacing: 5px;
+	border-color: black;
+	padding: 5px;
+}
+.dataList th{
+	-moz-border-radius: 5px 5px 0px 0px;
+	background-color: #2a7098;
+	height: 45px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;	
+}
+.dataList td{
+	background-color: #e6f1ee;
+	height: 20px;
+	color: black;
+	font-size: 14px;
+	border-width: 2px;
+	padding: 1px;
+	border-style: solid;
+	border-color: #71a0ba;
+	border-left: none;
+	border-top: none;
+	border-right-color: #b7d6e7;
+	-moz-border-radius: 0px 0px 4px 0px;
+}
+
+.newsViewTable{
+	width: 800px;
+	height: 300px;
+	overflow: scroll;
+}
+.newsViewTable th{
+	color: #001A43;
+	font-weight: bold;
+	font-size: 18px;
+	float: right;
+}
+.newsViewTable td{
+	height:280px;
+	overflow: scroll;
+	
+}
+#newsViewDIV{
+	width: 800px;
+	height: 300px;
+	overflow: scroll;
+}
+.pageTitle{
+	color: #005387;
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;	
+}
+.title{
+	color: #005387;
+	text-align: center;
+	font-size: 19px;
+	font-weight: bold;		
+}
+p {
+	color: #005387;
+	font-size: 14px;
+	text-align: justify;
+}

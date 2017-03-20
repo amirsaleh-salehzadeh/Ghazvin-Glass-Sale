@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+<servlet>
+    <servlet-name>action</servlet-name>
+    <servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+    <init-param>
+      <param-name>config</param-name>
+      <param-value>/WEB-INF/struts-config-tiles.xml,/WEB-INF/struts-config.xml</param-value>
+    </init-param>
+    <init-param>
+      <param-name>debug</param-name>
+      <param-value>3</param-value>
+    </init-param>
+    <init-param>
+      <param-name>detail</param-name>
+      <param-value>3</param-value>
+    </init-param>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>action</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <security-role>
+            <role-name>administrator</role-name>
+            <role-name>floatmng</role-name>
+            <role-name>sheetmng</role-name>
+            <role-name>usermng</role-name>
+            <role-name>newsmng</role-name>
+            <role-name>customer</role-name>
+   </security-role>
+   
+   <security-constraint>
+	  <web-resource-collection>
+	    <web-resource-name>NEWS Management</web-resource-name>
+	    <url-pattern>/t_news.do</url-pattern>
+	    <url-pattern>/t_login.do</url-pattern>
+	    <http-method>GET</http-method>
+		<http-method>POST</http-method>
+	  </web-resource-collection>
+	  <auth-constraint>
+	    <role-name>newsmng</role-name>
+	  </auth-constraint>
+	</security-constraint>
+	
+   <security-constraint>
+	  <web-resource-collection>
+	    <web-resource-name>User Management</web-resource-name>
+	    <url-pattern>/t_user.do</url-pattern>
+	    <url-pattern>/t_login.do</url-pattern>
+	    <http-method>GET</http-method>
+		<http-method>POST</http-method>
+	  </web-resource-collection>
+	  <auth-constraint>
+	    <role-name>sheetmng</role-name>
+	  </auth-constraint>
+	</security-constraint>
+	
+   <security-constraint>
+	  <web-resource-collection>
+	    <web-resource-name>Product Management</web-resource-name>
+	    <url-pattern>/t_user.do</url-pattern>
+	    <url-pattern>/t_login.do</url-pattern>
+	    <url-pattern>/t_order.do</url-pattern>
+	    <http-method>GET</http-method>
+		<http-method>POST</http-method>
+	  </web-resource-collection>
+	  <auth-constraint>
+	  	<role-name>customer</role-name>
+	    <role-name>sheetmng</role-name>
+	    <role-name>floatmng</role-name>
+	    <role-name>customer</role-name>
+	  </auth-constraint>
+	</security-constraint>
+	
+   <security-constraint>
+	  <web-resource-collection>
+	    <web-resource-name>Administrator</web-resource-name>
+	    <url-pattern>/t_user.do</url-pattern>
+	    <url-pattern>/t_login.do</url-pattern>
+	    <url-pattern>/t_order.do</url-pattern>
+	    <url-pattern>/t_news.do</url-pattern>
+	    <http-method>GET</http-method>
+		<http-method>POST</http-method>
+	  </web-resource-collection>
+	  <auth-constraint>
+	    <role-name>administrator</role-name>
+	  </auth-constraint>
+	</security-constraint> 
+	
+   <login-config>
+        <auth-method>FORM</auth-method>
+        <realm-name>MyFirst Protected Area</realm-name>
+        <form-login-config>
+        <form-login-page>/t_login.do</form-login-page>
+        <form-error-page>/t_login.do?error=true</form-error-page>
+        </form-login-config>
+	</login-config>
+</web-app>
+

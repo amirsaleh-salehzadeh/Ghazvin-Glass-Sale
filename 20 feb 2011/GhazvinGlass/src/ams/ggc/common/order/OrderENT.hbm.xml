@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="ams.ggc.common.order.OrderENT" table="orders" >
+        <id name="orderId" type="java.lang.Integer">
+            <column name="orderID" />
+            <generator class="increment" />
+        </id>
+		<property name="totalPrice" type="java.lang.String">
+            <column name="price"/>
+        </property>
+        <property name="operator" type="java.lang.String">
+            <column name="operator"/>
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="status"/>
+        </property>
+        <property name="username" type="java.lang.String">
+            <column name="username"/>
+        </property>
+        <property name="dateTime" type="java.lang.String">
+            <column name="date"/>
+        </property>
+        <property name="context" type="java.lang.String">
+            <column name="ordertext"/>
+        </property>
+	</class>
+    <sql-query name="spGetOrdersTotalItems" callable="true">
+     {call GetOrdersTotalRows(?,?)}
+    </sql-query>
+   <sql-query name="spGetOrdersList" callable="true">
+   	<return class="ams.ggc.common.order.OrderENT" lock-mode="read"></return>
+     {call GetUserOrders(?,?,?)}
+    </sql-query>
+    <sql-query name="spGetOrdersSearchList" callable="true">
+   	<return class="ams.ggc.common.order.OrderENT" lock-mode="read"></return>
+     {call GetOrderSearch(?,?,?)}
+    </sql-query>
+   	<sql-query name="sqlUpdateStatus">
+     	update orders set status = 'در حال بررسی', operator = ? where orderID = ?
+    </sql-query>
+    <sql-query name="sqlUpdateDelStatus">
+     	update orders set status = 'حذف شده' where orderID = ?
+    </sql-query>
+    <sql-query name="sqlGetOrderENT" callable="true">
+   	<return class="ams.ggc.common.order.OrderENT" lock-mode="read"></return>
+     	select * from orders where orderID = ?
+    </sql-query>
+    <sql-query name="sqlGetOrderDetailENT" callable="true">
+   	<return class="ams.ggc.common.order.OrderDetailENT" lock-mode="read"></return>
+     	select * from orders_detail where orderID = ?
+    </sql-query>  
+</hibernate-mapping>

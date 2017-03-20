@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="ams.ggc.common.User.UserRoleENT" table="userrole" >
+        <id name="userName" type="java.lang.String" >
+            <column name="username"/>
+            <generator class="identity"/>
+        </id>        
+        <property name="role" type="java.lang.String">
+            <column name="role"/>
+        </property>
+    </class>
+    <sql-query name="sqlGetUserRoless" callable="true">
+		<return class="ams.ggc.common.User.UserRoleENT" lock-mode="read"></return>
+		select * from userrole where username = ?
+	</sql-query>
+</hibernate-mapping>

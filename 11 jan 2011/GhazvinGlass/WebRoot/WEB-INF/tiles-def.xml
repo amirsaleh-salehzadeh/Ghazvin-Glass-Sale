@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+<tiles-definitions>
+	<!-- Base Tiles Definition -->
+	<definition name="base.definition" path="/jsp/farsi/siteLayout.jsp">
+		<put name="menu" value="/jsp/farsi/menu/MenuFa.jsp" />
+		<put name="footer" value="/jsp/farsi/footer.jsp" />
+		<put name="functionMenu" value="/jsp/farsi/menu/functionMenu.jsp" />
+		
+	</definition>
+	<!-- Tiles Definition of welcome page -->
+	<definition name="page.requestForPage" extends="base.definition">
+		<put name="title" value="شرکت سهامی عام شیشه قزوین" />
+		<put name="body" value="/requestForPage.do" />
+	</definition>
+	<definition name="page.news" extends="base.definition">
+		<put name="title" value="اخبار" />
+		<put name="body" value="/news.do" />
+	</definition>
+	<!-- Tiles Definition of BookList -->
+	<definition name="page.user" extends="base.definition">
+		<put name="title" value="کاربران" />
+		<put name="body" value="/user.do" />
+	</definition>
+	<definition name="page.login" extends="base.definition">
+		<put name="title" value="ورود سیستم" />
+		<put name="body" value="/login.do" />
+	</definition>
+	<definition name="page.error" extends="base.definition">
+		<put name="title" value="خطا در ورود" />
+		<put name="body" value="/error.jsp" />
+	</definition>
+	<definition name="page.registeration" extends="base.definition">
+		<put name="title" value="ثبت نام" />
+		<put name="body" value="/register.do" />
+	</definition>
+	<definition name="page.order" extends="base.definition">
+		<put name="title" value="سفارش" />
+		<put name="body" value="/order.do" />
+	</definition>
+</tiles-definitions>

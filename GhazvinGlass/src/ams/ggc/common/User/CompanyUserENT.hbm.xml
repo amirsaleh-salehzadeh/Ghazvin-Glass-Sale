@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="ams.ggc.common.User.CompanyUserENT" table="legaluser" >
+        <id name="userName" type="java.lang.String">
+            <column name="username" />
+            <generator class="assigned" />
+        </id>
+		<property name="companyName" type="java.lang.String">
+            <column name="companyName"/>
+        </property>
+		<property name="address" type="java.lang.String">
+            <column name="address"/>
+        </property>
+		<property name="economicNumber" type="java.lang.String">
+            <column name="economicNumber"/>
+        </property>
+        <property name="tel" type="java.lang.String">
+            <column name="tel"/>
+        </property>
+        <property name="emailAddress" type="java.lang.String">
+            <column name="email"/>
+        </property>
+        <property name="webSiteAddress" type="java.lang.String">
+            <column name="website"/>
+        </property>
+        <property name="faxNo" type="java.lang.String">
+            <column name="faxNo"/>
+        </property>
+	</class>
+</hibernate-mapping>

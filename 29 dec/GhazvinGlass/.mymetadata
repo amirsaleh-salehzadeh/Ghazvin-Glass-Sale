@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="GhazvinGlass"
+  id="myeclipse.1290416387555"
+  context-root="/GhazvinGlass"
+  j2ee-spec="1.4"
+  archive="GhazvinGlass.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

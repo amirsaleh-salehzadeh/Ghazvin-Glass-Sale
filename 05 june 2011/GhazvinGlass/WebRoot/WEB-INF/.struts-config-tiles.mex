@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/welcome.do" location="50,50" dimension="242,96" />
+  <StrutsActivity path="/t_login.do" location="350,50" dimension="184,96" />
+  <StrutsActivity path="/t_register.do" location="50,1650" dimension="232,96" />
+  <StrutsActivity path="/t_requestForPage.do" location="350,1250" dimension="277,96" />
+  <StrutsActivity path="/t_news.do" location="1250,850" dimension="221,96" />
+  <StrutsActivity path="/t_user.do" location="950,1250" dimension="215,96" />
+  <StrutsActivity path="/t_product.do" location="1550,550" dimension="196,96" />
+  <StrutsActivity path="/t_order.do" location="50,1450" dimension="184,96" />
+  <StrutsActivity path="/t_logOut.do" location="350,1450" dimension="229,96" />
+  <StrutsActivity path="/jsp/welcome.jsp" location="950,250" dimension="121,51" />
+  <StrutsActivity path="page.error" location="1250,150" dimension="84,51" />
+  <StrutsActivity path="page.login" location="1250,1450" dimension="86,51" />
+  <StrutsActivity path="page.registeration" location="650,1650" dimension="125,51" />
+  <StrutsActivity path="page.requestForPage" location="1250,450" dimension="141,51" />
+  <StrutsActivity path="page.news" location="1250,1050" dimension="86,51" />
+  <StrutsActivity path="page.user" location="1250,1250" dimension="81,51" />
+  <StrutsActivity path="page.product" location="1550,250" dimension="101,51" />
+  <StrutsActivity path="page.order" location="650,1450" dimension="87,51" />
+  <StrutsActivity path="/jsp/farsi/order/myOrderList.jsp" location="50,1050" dimension="198,51" />
+  <StrutsActivity path="/jsp/farsi/order/orderForm.jsp" location="350,1050" dimension="189,51" />
+  <StrutsActivity path="/jsp/farsi/order/orderConfirmation.jsp" location="650,1050" dimension="232,51" />
+  <StrutsActivity path="/jsp/farsi/order/orderList.jsp" location="950,1050" dimension="179,51" />
+  <StrutsActivity path="/jsp/farsi/order/orderView.jsp" location="50,1250" dimension="186,51" />
+  <StrutsActivity path="/jsp/farsi/user/userRoles.jsp" location="650,650" dimension="177,51" />
+  <StrutsActivity path="/jsp/farsi/user/userRegisterationSuccess.jsp" location="950,650" dimension="259,51" />
+  <StrutsActivity path="/jsp/farsi/user/userEdit.jsp" location="50,850" dimension="169,51" />
+  <StrutsActivity path="/jsp/farsi/user/userRegisteration.jsp" location="350,850" dimension="218,51" />
+  <StrutsActivity path="/jsp/farsi/user/userList.jsp" location="650,850" dimension="167,51" />
+  <StrutsActivity path="/jsp/farsi/user/operator.jsp" location="950,850" dimension="172,51" />
+  <StrutsActivity path="/jsp/farsi/news/miniNewsList.jsp" location="950,450" dimension="203,51" />
+  <StrutsActivity path="/jsp/farsi/news/newsList.jsp" location="50,650" dimension="177,51" />
+  <StrutsActivity path="/jsp/farsi/news/newsView.jsp" location="350,650" dimension="184,51" />
+  <StrutsActivity path="/jsp/mainPageFa.jsp" location="50,450" dimension="138,51" />
+  <StrutsActivity path="/jsp/mainPageAr.jsp" location="350,450" dimension="138,51" />
+  <StrutsActivity path="/jsp/mainPageEn.jsp" location="650,450" dimension="139,51" />
+  <StrutsActivity path="page.register" location="350,1650" dimension="98,51" />
+  <StrutsActivity path="/jsp/farsi/product/productEdit.jsp" location="1550,750" dimension="209,51" />
+  <StrutsActivity path="/jsp/farsi/product/productList.jsp" location="1550,950" dimension="207,51" />
+  <StrutsActivity path="/jsp/farsi/product/orderProductList.jsp" location="1550,1150" dimension="235,51" />
+  <StrutsTransition id="/t_requestForPage.do,farsiSimpleGlass,page.requestForPage,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="488,1298" />
+      <AbsolutePoint location="1320,475" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_requestForPage.do,english,page.requestForPage,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="518,1250" />
+      <AbsolutePoint location="518,1176" />
+      <AbsolutePoint location="1224,1176" />
+      <AbsolutePoint location="1224,475" />
+      <AbsolutePoint location="1250,475" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_requestForPage.do,f,page.requestForPage,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="627,1268" />
+      <AbsolutePoint location="897,1268" />
+      <AbsolutePoint location="897,376" />
+      <AbsolutePoint location="1319,376" />
+      <AbsolutePoint location="1319,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_requestForPage.do,farsiProducts,page.requestForPage,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="488,1298" />
+      <AbsolutePoint location="1320,475" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_requestForPage.do,farsiOtherIndustries,page.requestForPage,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="488,1298" />
+      <AbsolutePoint location="1320,475" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_news.do,list,page.news,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1323,946" />
+      <AbsolutePoint location="1323,1050" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_order.do,saveEdit,page.order,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="142,1498" />
+      <AbsolutePoint location="693,1475" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_order.do,confirmation,page.order,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="112,1546" />
+      <AbsolutePoint location="112,1621" />
+      <AbsolutePoint location="723,1621" />
+      <AbsolutePoint location="723,1501" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_user.do,delete,page.user,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1057,1298" />
+      <AbsolutePoint location="1290,1275" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_requestForPage.do,farsiInsultingGlass,page.requestForPage,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="488,1298" />
+      <AbsolutePoint location="1320,475" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_requestForPage.do,farsiLaminatedGlass,page.requestForPage,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="488,1298" />
+      <AbsolutePoint location="1320,475" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_register.do,save,page.registeration,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="166,1698" />
+      <AbsolutePoint location="712,1675" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_order.do,myList,page.order,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="142,1546" />
+      <AbsolutePoint location="142,1591" />
+      <AbsolutePoint location="693,1591" />
+      <AbsolutePoint location="693,1501" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_requestForPage.do,farsiGallery,page.requestForPage,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="488,1298" />
+      <AbsolutePoint location="1320,475" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_order.do,orderPage,page.order,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="142,1498" />
+      <AbsolutePoint location="693,1475" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_user.do,saveEdit,page.user,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1057,1298" />
+      <AbsolutePoint location="1290,1275" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_order.do,new,page.order,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="142,1498" />
+      <AbsolutePoint location="693,1475" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_requestForPage.do,farsiFloat,page.requestForPage,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="350,1286" />
+      <AbsolutePoint location="307,1286" />
+      <AbsolutePoint location="307,716" />
+      <AbsolutePoint location="1320,716" />
+      <AbsolutePoint location="1320,501" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_user.do,operator,page.user,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1165,1253" />
+      <AbsolutePoint location="1250,1253" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_order.do,form,page.order,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="172,1546" />
+      <AbsolutePoint location="172,1561" />
+      <AbsolutePoint location="663,1561" />
+      <AbsolutePoint location="663,1501" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_order.do,confirmNew,page.order,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="234,1498" />
+      <AbsolutePoint location="307,1498" />
+      <AbsolutePoint location="307,1911" />
+      <AbsolutePoint location="594,1911" />
+      <AbsolutePoint location="594,1475" />
+      <AbsolutePoint location="650,1475" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_register.do,registerationSuccess,page.registeration,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="282,1716" />
+      <AbsolutePoint location="712,1716" />
+      <AbsolutePoint location="712,1701" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_order.do,view,page.order,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="142,1450" />
+      <AbsolutePoint location="142,1391" />
+      <AbsolutePoint location="693,1391" />
+      <AbsolutePoint location="693,1450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_requestForPage.do,farsiSheet,page.requestForPage,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="627,1268" />
+      <AbsolutePoint location="897,1268" />
+      <AbsolutePoint location="897,376" />
+      <AbsolutePoint location="1319,376" />
+      <AbsolutePoint location="1319,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_requestForPage.do,farsiTemperedGlass,page.requestForPage,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="488,1298" />
+      <AbsolutePoint location="1320,475" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_news.do,miniList,page.news,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1293,946" />
+      <AbsolutePoint location="1293,1050" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_login.do,error,page.error,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="1292,175" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_register.do,changePasswordView,page.registeration,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="166,1698" />
+      <AbsolutePoint location="712,1675" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_register.do,checkValidity,page.registeration,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="166,1698" />
+      <AbsolutePoint location="712,1675" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_register.do,registeration,page.registeration,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="166,1746" />
+      <AbsolutePoint location="166,1821" />
+      <AbsolutePoint location="742,1821" />
+      <AbsolutePoint location="742,1701" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/welcome.do,welcomePage,/jsp/welcome.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="292,98" />
+      <AbsolutePoint location="1010,98" />
+      <AbsolutePoint location="1010,250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_user.do,salemng,page.user,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1165,1316" />
+      <AbsolutePoint location="1290,1316" />
+      <AbsolutePoint location="1290,1301" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_requestForPage.do,farsiMoshajarGlass,page.requestForPage,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="488,1298" />
+      <AbsolutePoint location="1320,475" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_login.do,login,page.login,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="1293,1475" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_order.do,saveNew,page.order,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="234,1498" />
+      <AbsolutePoint location="307,1498" />
+      <AbsolutePoint location="307,1911" />
+      <AbsolutePoint location="594,1911" />
+      <AbsolutePoint location="594,1475" />
+      <AbsolutePoint location="650,1475" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_order.do,list,page.order,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="172,1450" />
+      <AbsolutePoint location="172,1421" />
+      <AbsolutePoint location="663,1421" />
+      <AbsolutePoint location="663,1450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_requestForPage.do,farsi,page.requestForPage,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="613,1250" />
+      <AbsolutePoint location="613,776" />
+      <AbsolutePoint location="1350,776" />
+      <AbsolutePoint location="1350,501" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_order.do,edit,page.order,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="142,1498" />
+      <AbsolutePoint location="693,1475" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_order.do,userOrderList,page.order,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="112,1450" />
+      <AbsolutePoint location="112,1361" />
+      <AbsolutePoint location="723,1361" />
+      <AbsolutePoint location="723,1450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_product.do,new,page.product,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1648,598" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_product.do,orderList,page.product,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1648,598" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_requestForPage.do,farsiAboutUs,page.requestForPage,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="488,1298" />
+      <AbsolutePoint location="1320,475" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_user.do,userRoles,page.user,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1165,1275" />
+      <AbsolutePoint location="1250,1275" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_order.do,save,page.order,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="142,1498" />
+      <AbsolutePoint location="693,1475" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_requestForPage.do,farsiHistory,page.requestForPage,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="488,1298" />
+      <AbsolutePoint location="1320,475" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_product.do,list,page.product,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1648,598" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_news.do,view,page.news,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1263,946" />
+      <AbsolutePoint location="1263,1050" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_user.do,edit,page.user,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1087,1250" />
+      <AbsolutePoint location="1087,1206" />
+      <AbsolutePoint location="1290,1206" />
+      <AbsolutePoint location="1290,1250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_order.do,delete,page.order,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="142,1498" />
+      <AbsolutePoint location="693,1475" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_requestForPage.do,arabic,page.requestForPage,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="583,1250" />
+      <AbsolutePoint location="583,576" />
+      <AbsolutePoint location="1290,576" />
+      <AbsolutePoint location="1290,501" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_requestForPage.do,farsiContactUs,page.requestForPage,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="627,1298" />
+      <AbsolutePoint location="927,1298" />
+      <AbsolutePoint location="927,806" />
+      <AbsolutePoint location="1380,806" />
+      <AbsolutePoint location="1380,501" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_requestForPage.do,farsiColoredSimpleGlass,page.requestForPage,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="488,1298" />
+      <AbsolutePoint location="1320,475" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_requestForPage.do,farsiDevelopmentPlans,page.requestForPage,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="488,1250" />
+      <AbsolutePoint location="488,1116" />
+      <AbsolutePoint location="1546,1116" />
+      <AbsolutePoint location="1546,475" />
+      <AbsolutePoint location="1391,475" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_user.do,list,page.user,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1087,1346" />
+      <AbsolutePoint location="1087,1361" />
+      <AbsolutePoint location="1320,1361" />
+      <AbsolutePoint location="1320,1301" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

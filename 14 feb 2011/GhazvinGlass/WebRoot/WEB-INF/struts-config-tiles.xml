@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans />
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings >
+    <action
+      parameter="reqCode"
+      path="/welcome"
+      type="ams.ggc.struts.WelcomeAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="welcomePage" path="/jsp/welcome.jsp" />
+    </action>
+    
+    <action
+      parameter="reqCode"
+      path="/t_login"
+      type="ams.ggc.struts.LoginAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="login" path="page.login" />
+      <forward name="error" path="page.error" />
+    </action>
+    
+    <action
+      parameter="reqCode"
+      path="/t_register"
+      type="ams.ggc.struts.tiles.T_RegisterAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="registeration" path="page.registeration" />
+      <forward name="changePasswordView" path="page.registeration" />
+      <forward name="save" path="page.registeration" />
+      <forward name="checkValidity" path="page.registeration" />
+      <forward name="registerationSuccess" path="page.registeration" />
+    </action>
+    
+    <action
+      parameter="reqCode"
+      path="/t_requestForPage"
+      type="ams.ggc.struts.tiles.T_RequestForPageAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="arabic" path="page.requestForPage" />
+      <forward name="farsi" path="page.requestForPage" />
+      <forward name="farsiContactUs" path="page.requestForPage"/>
+      <forward name="farsiDevelopmentPlans" path="page.requestForPage" />
+      <forward name="farsiInsultingGlass" path="page.requestForPage" />
+      <forward name="farsiLaminatedGlass" path="page.requestForPage" />
+      <forward name="farsiMoshajarGlass" path="page.requestForPage" />
+      <forward name="farsiSimpleGlass" path="page.requestForPage" />
+      <forward name="farsiTemperedGlass" path="page.requestForPage" />
+      <forward name="farsiColoredSimpleGlass" path="page.requestForPage" />
+      <forward name="farsiGallery" path="page.requestForPage" />
+      <forward name="farsiFloat" path="page.requestForPage"/>
+      <forward name="farsiHistory" path="page.requestForPage"/>
+      <forward name="english" path="page.requestForPage" />
+    </action>
+    <action
+      parameter="reqCode"
+      path="/t_news"
+      type="ams.ggc.struts.tiles.T_NewsAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="miniList" path="page.news" />
+      <forward name="list" path="page.news" />
+      <forward name="view" path="page.news" />
+    </action>
+    <action
+      parameter="reqCode"
+      path="/t_user"
+      type="ams.ggc.struts.tiles.T_UserAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="list" path="page.user" />
+      <forward name="userRoles" path="page.user" />
+      <forward name="saveEdit" path="page.user" />
+      <forward name="edit" path="page.user" />
+      <forward name="operator" path="page.user" />
+      <forward name="salemng" path="page.user" />
+    </action>
+     
+     <action
+      parameter="reqCode"
+      path="/t_product"
+      type="ams.ggc.struts.tiles.T_ProductAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="list" path="page.product" />
+      <forward name="new" path="page.product" />
+      <forward name="orderList" path="page.product" />
+    </action>
+
+    <action
+      parameter="reqCode"
+      path="/t_order"
+      type="ams.ggc.struts.tiles.T_OrderAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="orderPage" path="page.order" />
+      <forward name="form" path="page.order" />
+      <forward name="userOrderList" path="page.order" />
+      <forward name="myList" path="page.order" />
+      <forward name="view" path="page.order" />
+      <forward name="list" path="page.order" />
+      <forward name="confirmation" path="page.order" />
+      <forward name="save" path="page.order" />
+      <forward name="delete" path="page.order" />
+      <forward name="edit" path="page.order" />
+    </action>
+
+    <action
+      parameter="reqCode"
+      path="/t_logOut"
+      type="ams.ggc.struts.tiles.T_LogOutAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    
+  </action-mappings>
+
+  <message-resources parameter="ams.ggc.struts.ApplicationResources" />
+	<plug-in className="org.apache.struts.tiles.TilesPlugin">
+		<set-property property="definitions-config" value="/WEB-INF/tiles-def.xml" />
+		<set-property property="moduleAware" value="true" />
+		<set-property property="definitions-parser-validate" value="true" />
+	</plug-in>
+</struts-config>
+

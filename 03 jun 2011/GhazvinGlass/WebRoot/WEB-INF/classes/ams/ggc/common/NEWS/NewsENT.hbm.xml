@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="ams.ggc.common.NEWS.NewsENT" table="news">
+		<id name="id" type="java.lang.Integer">
+			<column name="ID" />
+			<generator class="assigned" />
+		</id>
+		<property name="title" type="java.lang.String">
+			<column name="title" />
+		</property>
+		<property name="text" type="java.lang.String">
+			<column name="text" />
+		</property>
+		<property name="language" type="java.lang.String">
+			<column name="language" />
+		</property>
+		<property name="date" type="java.lang.String">
+			<column name="date" />
+		</property>
+	</class>
+	<sql-query name="sqlGetNewsCount">
+		SELECT count( * ) as totalItems FROM news where language = ?
+   </sql-query>
+	<sql-query name="spGetNewsList" callable="true">
+		<return class="ams.ggc.common.NEWS.NewsENT" lock-mode="read"></return>
+		{call GetPages(?,?,?)}
+	</sql-query>
+	<sql-query name="sqlGetNewsMiniList" callable="true">
+		<return class="ams.ggc.common.NEWS.NewsENT" lock-mode="read"></return>
+		select * from news where language=? ORDER BY date desc limit 0 , 6
+	</sql-query>
+	<sql-query name="sqlGetNewsENT" callable="true">
+		<return class="ams.ggc.common.NEWS.NewsENT" lock-mode="read"></return>
+		select * from news where ID = ?
+	</sql-query>
+</hibernate-mapping>

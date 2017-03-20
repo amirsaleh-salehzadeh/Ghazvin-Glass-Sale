@@ -1,0 +1,23 @@
+ul#nav {
+	background: url(../images/menu/button-01.png) no-repeat;
+	margin: 0;
+	padding: 0;
+	padding-top: 20px;
+	list-style: none;
+	list-style:none;
+	padding-left:20%;
+
+}
+ul#nav li{
+	float: right;	
+}
+
+ul#nav li ul.big{
+	display: none;	
+}
+a.top_link span{
+	background: url(WebRoot/images/menu/button-01.png) no-repeat;
+	color: black;
+	width: 130px;
+	height: 60px;
+}

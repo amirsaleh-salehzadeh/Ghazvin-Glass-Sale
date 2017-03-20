@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/t_requestForPage.do" location="350,250" dimension="345,96" />
+  <StrutsActivity path="/jsp/mainPageAr.jsp" location="950,50" dimension="138,51" />
+  <StrutsActivity path="/jsp/welcome.jsp" location="950,650" dimension="121,51" />
+  <StrutsActivity path="/jsp/farsi/news/miniNewsList.jsp" location="50,850" dimension="203,51" />
+  <StrutsActivity path="/jsp/farsi/news/newsList.jsp" location="350,850" dimension="177,51" />
+  <StrutsActivity path="/jsp/farsi/news/newsView.jsp" location="650,850" dimension="184,51" />
+  <StrutsActivity path="/jsp/farsi/user/userRoles.jsp" location="950,850" dimension="177,51" />
+  <StrutsActivity path="/jsp/farsi/user/userEdit.jsp" location="50,1050" dimension="169,51" />
+  <StrutsActivity path="/jsp/farsi/user/userRegisteration.jsp" location="350,1050" dimension="218,51" />
+  <StrutsActivity path="/jsp/farsi/user/userList.jsp" location="650,1050" dimension="167,51" />
+  <StrutsActivity path="/jsp/farsi/order/orderForm.jsp" location="950,1050" dimension="189,51" />
+  <StrutsActivity path="/jsp/farsi/order/orderList.jsp" location="50,1250" dimension="179,51" />
+  <StrutsActivity path="/page.requestForPage" location="950,450" dimension="146,51" />
+  <StrutsActivity path="page.arabic" location="950,250" dimension="91,51" />
+  <StrutsActivity path="/jsp/mainPageEn.jsp" location="50,250" dimension="139,51" />
+  <StrutsActivity path="page.farsi" location="50,450" dimension="81,51" />
+  <StrutsActivity path="page.english" location="350,450" dimension="97,51" />
+  <StrutsActivity path="page.e" location="650,450" dimension="65,51" />
+  <StrutsActivity path="/jsp/mainPageFa.jsp" location="650,50" dimension="138,51" />
+  <StrutsActivity path="page.requestForPage" location="350,50" dimension="141,51" />
+  <StrutsActivity path="page.welcome" location="1250,850" dimension="107,51" />
+  <StrutsActivity path="page.booklist" location="1250,1050" dimension="101,51" />
+  <StrutsActivity path="/jsp/navigation.jsp" location="350,1250" dimension="129,51" />
+  <StrutsTransition id="/t_requestForPage.do,english,/page.requestForPage,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="512,346" />
+      <AbsolutePoint location="512,391" />
+      <AbsolutePoint location="993,391" />
+      <AbsolutePoint location="993,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/bookList.do,showBookList,page.booklist,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="268,746" />
+      <AbsolutePoint location="268,976" />
+      <AbsolutePoint location="1300,976" />
+      <AbsolutePoint location="1300,1050" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_requestForPage.do,english,page.requestForPage,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="420,250" />
+      <AbsolutePoint location="420,101" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_requestForPage.do,arabic,page.requestForPage,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="390,250" />
+      <AbsolutePoint location="390,101" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_requestForPage.do,farsi,page.requestForPage,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="450,250" />
+      <AbsolutePoint location="450,101" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/welcome.do,showWelcome,page.welcome,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,486" />
+      <AbsolutePoint location="1184,486" />
+      <AbsolutePoint location="1184,875" />
+      <AbsolutePoint location="1250,875" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/navigation.do,showNavigation,/jsp/navigation.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1419,746" />
+      <AbsolutePoint location="1419,1275" />
+      <AbsolutePoint location="479,1275" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_requestForPage.do,arabic,/page.requestForPage,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="695,286" />
+      <AbsolutePoint location="760,286" />
+      <AbsolutePoint location="760,475" />
+      <AbsolutePoint location="950,475" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/t_requestForPage.do,farsi,/page.requestForPage,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="695,316" />
+      <AbsolutePoint location="1023,316" />
+      <AbsolutePoint location="1023,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

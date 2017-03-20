@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/requestForPage.do" location="650,650" dimension="287,96" />
+  <StrutsActivity path="/login.do" location="1250,850" dimension="184,96" />
+  <StrutsActivity path="/news.do" location="281,604" dimension="221,96" />
+  <StrutsActivity path="/user.do" location="759,0" dimension="215,96" />
+  <StrutsActivity path="/register.do" location="1250,650" dimension="177,96" />
+  <StrutsActivity path="/product.do" location="1250,1250" dimension="196,96" />
+  <StrutsActivity path="/order.do" location="592,312" dimension="222,96" />
+  <StrutsActivity path="/logOut.do" location="619,896" dimension="229,96" />
+  <StrutsActivity path="/jsp/farsi/initialPage.jsp" location="950,850" dimension="155,51" />
+  <StrutsActivity path="/jsp/farsi/float.jsp" location="1250,1050" dimension="124,51" />
+  <StrutsActivity path="/jsp/farsi/contactus.jsp" location="950,1050" dimension="152,51" />
+  <StrutsActivity path="/jsp/farsi/developmentPlans.jsp" location="50,1250" dimension="198,51" />
+  <StrutsActivity path="/jsp/farsi/gallery.jsp" location="1550,350" dimension="135,51" />
+  <StrutsActivity path="/jsp/farsi/moshajarGlass.jsp" location="1550,1150" dimension="176,51" />
+  <StrutsActivity path="/jsp/farsi/temperedGlass.jsp" location="650,1250" dimension="178,51" />
+  <StrutsActivity path="/jsp/farsi/history.jsp" location="1250,350" dimension="136,51" />
+  <StrutsActivity path="/jsp/farsi/insultingGlass.jsp" location="1550,750" dimension="173,51" />
+  <StrutsActivity path="/jsp/farsi/coloredSimpleGlass.jsp" location="1550,550" dimension="203,51" />
+  <StrutsActivity path="/jsp/farsi/laminatedGlass.jsp" location="1550,950" dimension="180,51" />
+  <StrutsActivity path="/jsp/farsi/simpleGlass.jsp" location="350,1250" dimension="162,51" />
+  <StrutsActivity path="/jsp/farsi/userRegisteration.jsp" location="350,350" dimension="191,51" />
+  <StrutsActivity path="/login.jsp" location="950,350" dimension="80,51" />
+  <StrutsActivity path="/jsp/farsi/news/miniNewsList.jsp" location="0,800" dimension="203,51" />
+  <StrutsActivity path="/jsp/farsi/news/newsList.jsp" location="303,800" dimension="177,51" />
+  <StrutsActivity path="/jsp/farsi/news/newsView.jsp" location="580,800" dimension="184,51" />
+  <StrutsActivity path="/jsp/farsi/user/userRoles.jsp" location="0,216" dimension="177,51" />
+  <StrutsActivity path="/jsp/farsi/user/userEdit.jsp" location="636,216" dimension="169,51" />
+  <StrutsActivity path="/jsp/farsi/user/userList.jsp" location="1223,216" dimension="167,51" />
+  <StrutsActivity path="/jsp/farsi/user/operator.jsp" location="1490,216" dimension="172,51" />
+  <StrutsActivity path="/jsp/farsi/user/userRegisterationSuccess.jsp" location="277,216" dimension="259,51" />
+  <StrutsActivity path="/jsp/farsi/user/changePassword.jsp" location="650,1450" dimension="216,51" />
+  <StrutsActivity path="/jsp/farsi/user/userRegisteration.jsp" location="905,216" dimension="218,51" />
+  <StrutsActivity path="/jsp/farsi/product/productEdit.jsp" location="50,1450" dimension="209,51" />
+  <StrutsActivity path="/jsp/farsi/product/productList.jsp" location="1550,1350" dimension="207,51" />
+  <StrutsActivity path="/jsp/farsi/product/orderProductList.jsp" location="350,1450" dimension="235,51" />
+  <StrutsActivity path="/jsp/farsi/order/myOrderList.jsp" location="0,508" dimension="198,51" />
+  <StrutsActivity path="/jsp/farsi/order/orderForm.jsp" location="298,508" dimension="189,51" />
+  <StrutsActivity path="/jsp/farsi/order/orderConfirmation.jsp" location="587,508" dimension="232,51" />
+  <StrutsActivity path="/jsp/farsi/order/orderList.jsp" location="919,508" dimension="179,51" />
+  <StrutsActivity path="/jsp/farsi/order/orderView.jsp" location="1198,508" dimension="186,51" />
+  <StrutsActivity path="/jsp/farsi/userRegistration.jsp" location="50,350" dimension="185,51" />
+  <StrutsActivity path="/jsp/welcome.jsp" location="392,1092" dimension="121,51" />
+  <StrutsActivity path="page.requestForPage" location="73,1092" dimension="141,51" />
+  <StrutsActivity path="/jsp/initialFa.jsp" location="50,650" dimension="114,51" />
+  <StrutsActivity path="page.error" location="50,950" dimension="84,51" />
+  <StrutsActivity path="page.login" location="350,950" dimension="86,51" />
+  <StrutsActivity path="login.jsp" location="650,1050" dimension="75,51" />
+  <StrutsActivity path="/jsp/gallery.jsp" location="950,1250" dimension="108,51" />
+  <StrutsActivity path="/jsp/farsi/order/orderEdit.jsp" />
+  <StrutsTransition id="/requestForPage.do,farsiSimpleGlass,/jsp/farsi/simpleGlass.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="793,746" />
+      <AbsolutePoint location="793,866" />
+      <AbsolutePoint location="318,866" />
+      <AbsolutePoint location="318,1275" />
+      <AbsolutePoint location="350,1275" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/requestForPage.do,farsiGallery,/jsp/farsi/gallery.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="793,698" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/requestForPage.do,farsiDevelopmentPlans,/jsp/farsi/developmentPlans.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="863,746" />
+      <AbsolutePoint location="863,1376" />
+      <AbsolutePoint location="149,1376" />
+      <AbsolutePoint location="149,1301" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/order.do,view,/jsp/farsi/order/orderView.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="814,360" />
+      <AbsolutePoint location="1291,360" />
+      <AbsolutePoint location="1291,508" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/requestForPage.do,farsiContactUs,/jsp/farsi/contactus.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="893,746" />
+      <AbsolutePoint location="893,1075" />
+      <AbsolutePoint location="950,1075" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/requestForPage.do,arabic,/jsp/farsi/initialPage.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="793,698" />
+      <AbsolutePoint location="1027,875" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/order.do,myList,/jsp/farsi/order/myOrderList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="592,360" />
+      <AbsolutePoint location="99,360" />
+      <AbsolutePoint location="99,508" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/requestForPage.do,farsiRegistration,/jsp/farsi/userRegisteration.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="793,698" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/order.do,confirmation,/jsp/farsi/order/orderConfirmation.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="703,408" />
+      <AbsolutePoint location="703,508" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/requestForPage.do,farsiLaminatedGlass,/jsp/farsi/laminatedGlass.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="923,746" />
+      <AbsolutePoint location="923,975" />
+      <AbsolutePoint location="1550,975" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/requestForPage.do,farsi,/jsp/farsi/initialPage.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="937,698" />
+      <AbsolutePoint location="1027,698" />
+      <AbsolutePoint location="1027,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/login.do,login,/login.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1342,898" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/news.do,view,/jsp/farsi/news/newsView.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="502,665" />
+      <AbsolutePoint location="635,665" />
+      <AbsolutePoint location="635,800" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/user.do,edit,/jsp/farsi/user/userEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="774,96" />
+      <AbsolutePoint location="774,216" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/order.do,form,/jsp/farsi/order/orderForm.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="592,390" />
+      <AbsolutePoint location="392,390" />
+      <AbsolutePoint location="392,508" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/requestForPage.do,farsiMoshajarGlass,/jsp/farsi/moshajarGlass.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,716" />
+      <AbsolutePoint location="-75,716" />
+      <AbsolutePoint location="-75,1175" />
+      <AbsolutePoint location="1550,1175" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/requestForPage.do,english,/jsp/farsi/initialPage.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="793,698" />
+      <AbsolutePoint location="1027,875" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/register.do,registeration,/jsp/farsi/user/userRegisteration.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,698" />
+      <AbsolutePoint location="1120,698" />
+      <AbsolutePoint location="1120,267" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/product.do,list,/jsp/farsi/product/productList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1446,1328" />
+      <AbsolutePoint location="1653,1328" />
+      <AbsolutePoint location="1653,1350" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/news.do,miniList,/jsp/farsi/news/miniNewsList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="281,665" />
+      <AbsolutePoint location="179,665" />
+      <AbsolutePoint location="179,800" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/order.do,edit,/jsp/farsi/order/orderEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="703,360" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/product.do,orderList,/jsp/farsi/product/orderProductList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1348,1298" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/user.do,list,/jsp/farsi/user/userList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="974,78" />
+      <AbsolutePoint location="1306,78" />
+      <AbsolutePoint location="1306,216" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/user.do,operator,/jsp/farsi/user/operator.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="974,48" />
+      <AbsolutePoint location="1576,48" />
+      <AbsolutePoint location="1576,216" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/register.do,changePasswordView,/jsp/farsi/user/changePassword.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1338,698" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/register.do,registerationSuccess,/jsp/farsi/user/userRegisterationSuccess.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,668" />
+      <AbsolutePoint location="1168,668" />
+      <AbsolutePoint location="1168,141" />
+      <AbsolutePoint location="436,141" />
+      <AbsolutePoint location="436,216" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/product.do,new,/jsp/farsi/product/productEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1348,1298" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/requestForPage.do,farsiInsultingGlass,/jsp/farsi/insultingGlass.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="823,746" />
+      <AbsolutePoint location="823,775" />
+      <AbsolutePoint location="1550,775" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/requestForPage.do,farsiFloat,/jsp/farsi/float.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="937,728" />
+      <AbsolutePoint location="1213,728" />
+      <AbsolutePoint location="1213,1075" />
+      <AbsolutePoint location="1250,1075" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/order.do,list,/jsp/farsi/order/orderList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="814,390" />
+      <AbsolutePoint location="1008,390" />
+      <AbsolutePoint location="1008,508" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/requestForPage.do,farsiTemperedGlass,/jsp/farsi/temperedGlass.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="749,746" />
+      <AbsolutePoint location="749,775" />
+      <AbsolutePoint location="556,775" />
+      <AbsolutePoint location="556,1275" />
+      <AbsolutePoint location="650,1275" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/user.do,userRoles,/jsp/farsi/user/userRoles.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="759,48" />
+      <AbsolutePoint location="88,48" />
+      <AbsolutePoint location="88,216" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/news.do,list,/jsp/farsi/news/newsList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="391,700" />
+      <AbsolutePoint location="391,800" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/requestForPage.do,farsiHistory,/jsp/farsi/history.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="793,698" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/requestForPage.do,farsiColoredSimpleGlass,/jsp/farsi/coloredSimpleGlass.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="793,650" />
+      <AbsolutePoint location="793,575" />
+      <AbsolutePoint location="1550,575" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

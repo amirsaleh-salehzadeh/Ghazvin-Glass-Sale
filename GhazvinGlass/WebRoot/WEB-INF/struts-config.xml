@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans />
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings >
+    <action
+      parameter="reqCode"
+      path="/requestForPage"
+      type="ams.ggc.struts.RequestForPageAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="arabic" path="/jsp/farsi/initialPage.jsp" />
+      <forward name="farsi" path="/jsp/farsi/initialPage.jsp" />
+      <forward name="english" path="/jsp/farsi/initialPage.jsp" />
+      <forward name="farsiRegistration" path="/jsp/farsi/userRegisteration.jsp" />
+    </action>
+    <action
+      parameter="reqCode"
+      path="/login"
+      type="ams.ggc.struts.LoginAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="login" path="/login.jsp" />
+    </action>
+    <action
+      parameter="reqCode"
+      path="/news"
+      type="ams.ggc.struts.NewsAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="miniList" path="/jsp/farsi/news/miniNewsList.jsp" />
+      <forward name="list" path="/jsp/farsi/news/newsList.jsp" />
+      <forward name="view" path="/jsp/farsi/news/newsView.jsp" />
+    </action>
+    <action
+      parameter="reqCode"
+      path="/user"
+      type="ams.ggc.struts.UserAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="list" path="/jsp/farsi/user/userList.jsp" />
+      <forward name="userRoles" path="/jsp/farsi/user/userRoles.jsp" />
+      <forward name="edit" path="/jsp/farsi/user/userEdit.jsp" />
+      <forward name="operator" path="/jsp/farsi/user/operator.jsp" />
+    </action>
+    
+    <action
+      parameter="reqCode"
+      path="/register"
+      type="ams.ggc.struts.RegisterAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="registeration" path="/jsp/farsi/user/userRegisteration.jsp" />
+      <forward name="registerationSuccess" path="/jsp/farsi/user/userRegisterationSuccess.jsp" />
+    </action>
+
+    <action
+      parameter="reqCode"
+      path="/order"
+      type="ams.ggc.struts.OrderAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="form" path="/jsp/farsi/order/orderForm.jsp" />
+      <forward name="myList" path="/jsp/farsi/order/myOrderList.jsp" />
+      <forward name="view" path="/jsp/farsi/order/orderView.jsp" />
+      <forward name="list" path="/jsp/farsi/order/orderList.jsp" />
+      <forward name="confirmation" path="/jsp/farsi/order/orderConfirmation.jsp" />
+    </action>
+
+    <action
+      parameter="reqCode"
+      path="/logOut"
+      type="ams.ggc.struts.logOutAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+  </action-mappings>
+  <message-resources parameter="ams.ggc.struts.ApplicationResources" />
+</struts-config>
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="ams.ggc.common.product.ProductENT" table="products" >
+        <id name="productId" type="java.lang.Integer">
+            <column name="productID" />
+            <generator class="increment" />
+        </id>
+		<property name="name" type="java.lang.String">
+            <column name="name"/>
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="description"/>
+        </property>
+        <property name="color" type="java.lang.String">
+            <column name="color"/>
+        </property>
+        <property name="thickness" type="java.lang.Integer">
+            <column name="thickness"/>
+        </property>
+        <property name="price" type="java.lang.String">
+            <column name="price"/>
+        </property>
+        <property name="visibility" type="java.lang.Boolean">
+            <column name="visibility"/>
+        </property>
+	</class>
+	<sql-query name="spGetProductsTotalItems">
+     {call GetProductsTotalItems()}
+    </sql-query>
+   <sql-query name="spGetProductList" callable="true">
+   	<return class="ams.ggc.common.product.ProductENT" lock-mode="read"></return>
+     {call GetProducts(?,?)}
+    </sql-query>
+    <sql-query name="sqlGetProductENT" callable="true">
+   		<return class="ams.ggc.common.product.ProductENT" lock-mode="read"></return>
+     	select * from products where productID = ?
+    </sql-query>
+</hibernate-mapping>

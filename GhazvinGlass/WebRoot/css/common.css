@@ -1,0 +1,63 @@
+@CHARSET "ISO-8859-1";
+.printTable{
+	color: black;
+}
+.printTable th{
+	size: 20px;
+	font-weight: bold;
+	background: #eee;
+
+}
+.formTable tr:nth-child(odd){
+	color: #001A43;
+	background-color: #A2D1FB;
+	font-weight: bold;
+}
+.formTable th{
+	color: #A2D1FB;
+	background-color: #001A43;
+	font-weight: bold;
+	font-size: 22px;
+}
+.formTable tr:nth-child(even){
+	color: #001A43;
+	background-color: #73BBFC;
+	font-weight: bold;
+}
+.dataList th{
+	background-color: #001A43;
+	color: #A2D1FB;
+	font-weight: bold;
+	font-size: 16px;	
+}
+
+.dataList tr:nth-child(odd){
+	color: #001A43;
+	background-color: #A2D1FB;
+}
+
+.dataList tr:nth-child(even){
+	color: #001A43;
+	background-color: #73BBFC;
+}
+.newsViewTable{
+	width: 800px;
+	height: 300px;
+	overflow: scroll;
+}
+.newsViewTable th{
+	color: #001A43;
+	font-weight: bold;
+	font-size: 18px;
+	float: right;
+}
+.newsViewTable td{
+	height:280px;
+	overflow: scroll;
+	
+}
+#newsViewDIV{
+	width: 800px;
+	height: 300px;
+	overflow: scroll;
+}

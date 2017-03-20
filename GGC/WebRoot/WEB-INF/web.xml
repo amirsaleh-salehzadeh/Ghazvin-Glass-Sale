@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+  
+  <servlet>
+    <servlet-name>logIn</servlet-name>
+    <servlet-class>com.ggc.business.logIn</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>action</servlet-name>
+    <servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+    <init-param>
+      <param-name>config</param-name>
+      <param-value>/WEB-INF/struts-config.xml</param-value>
+    </init-param>
+    <init-param>
+      <param-name>debug</param-name>
+      <param-value>3</param-value>
+    </init-param>
+    <init-param>
+      <param-name>detail</param-name>
+      <param-value>3</param-value>
+    </init-param>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>action</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>logIn</servlet-name>
+    <url-pattern>/logIn</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <security-role>
+      <role-name>administrator</role-name>
+      <role-name>newsmng</role-name>
+      <role-name>ordermng</role-name>
+      <role-name>usermng</role-name>
+      <role-name>customer</role-name>
+  </security-role>
+      <security-constraint>
+     	<display-name>customer</display-name> 
+		<web-resource-collection>
+			<web-resource-name>customer</web-resource-name>
+			<url-pattern>/vser.do</url-pattern>
+			<url-pattern>/group.do</url-pattern>
+<!--			<http-method>GET</http-method>-->
+<!--			<http-method>POST</http-method>-->
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>customer</role-name>
+		</auth-constraint>
+	</security-constraint>
+    
+    <security-constraint>
+     	<display-name>usermng</display-name> 
+		<web-resource-collection>
+			<web-resource-name>usermng</web-resource-name>
+			<url-pattern>/vser.do</url-pattern>
+			<url-pattern>/group.do</url-pattern>
+<!--			<http-method>GET</http-method>-->
+<!--			<http-method>POST</http-method>-->
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>usermng</role-name>
+		</auth-constraint>
+	</security-constraint>
+    
+    <security-constraint>
+     	<display-name>ordermng</display-name> 
+		<web-resource-collection>
+			<web-resource-name>ordermng</web-resource-name>
+			<url-pattern>/vser.do</url-pattern>
+			<url-pattern>/group.do</url-pattern>
+<!--			<http-method>GET</http-method>-->
+<!--			<http-method>POST</http-method>-->
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>ordermng</role-name>
+		</auth-constraint>
+	</security-constraint>
+    
+    <security-constraint>
+     	<display-name>administrator</display-name> 
+		<web-resource-collection>
+			<web-resource-name>administrator</web-resource-name>
+			<url-pattern>/vser.do</url-pattern>
+			<url-pattern>/group.do</url-pattern>
+<!--			<http-method>GET</http-method>-->
+<!--			<http-method>POST</http-method>-->
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>administrator</role-name>
+		</auth-constraint>
+	</security-constraint>
+	
+	<security-constraint>
+   		<display-name>newsmng</display-name> 
+		<web-resource-collection>
+			<web-resource-name>newsmng</web-resource-name>
+			<url-pattern>/vews.do</url-pattern>
+<!--			<http-method>GET</http-method>-->
+<!--			<http-method>POST</http-method>-->
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>newsmng</role-name>
+		</auth-constraint>
+	</security-constraint>
+	
+	<login-config>
+		<auth-method>FORM</auth-method>
+		<form-login-config>
+			<form-login-page>/login.jsp</form-login-page>
+			<form-error-page>/login.jsp?error=true</form-error-page>
+		</form-login-config>
+	</login-config>
+</web-app>
